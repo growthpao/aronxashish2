@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>ASHISH BHAI 2 – Official  Community</title>
+
+ <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1044583597930469');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1044583597930469&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    body {
+      background: #050505;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: radial-gradient(ellipse at 50% 10%, rgba(212, 175, 55, 0.18) 0%, transparent 70%),
+                  radial-gradient(ellipse at 80% 90%, rgba(255, 215, 0, 0.08) 0%, transparent 50%);
+      top: 0;
+      left: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .main-wrapper {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      gap: 0;
+      position: relative;
+      z-index: 10;
+    }
+
+    .agency-btn {
+      margin: 14px auto 0;
+      background: rgba(10, 10, 10, 0.95);
+      border: 1px solid rgba(212, 175, 55, 0.8);
+      color: #f3c649;
+      font-weight: 900;
+      font-size: 12px;
+      padding: 12px 32px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      backdrop-filter: blur(18px);
+      box-shadow: 0 0 35px rgba(212, 175, 55, 0.35);
+      transition: all 0.3s ease;
+      z-index: 20;
+    }
+
+    .agency-btn:hover {
+      transform: translateY(-3px) scale(1.04);
+      box-shadow: 0 0 55px rgba(212, 175, 55, 0.8);
+      border-color: #ffd700;
+    }
+
+    .pulse-dot {
+      width: 10px;
+      height: 10px;
+      background: #22c55e;
+      border-radius: 50%;
+      box-shadow: 0 0 16px #22c55e;
+      animation: blink 1.2s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.2; transform: scale(0.75); }
+    }
+
+    .hero-card {
+      width: 100%;
+      background: rgba(8, 8, 8, 0.96);
+      backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(30px);
+      border: none;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+      border-top: 1px solid rgba(212, 175, 55, 0.25);
+      border-radius: 0;
+      padding: 28px 18px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.95);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::after {
+      content: '';
+      position: absolute;
+      top: -60%;
+      left: -60%;
+      width: 220%;
+      height: 220%;
+      background: conic-gradient(from 0deg, transparent, rgba(212,175,55,0.04), transparent, rgba(212,175,55,0.04), transparent);
+      animation: rotateShine 25s linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes rotateShine {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .vip-tag {
+      background: linear-gradient(90deg, #bf953f, #fcf6ba, #b38728, #fbf5b7);
+      color: #000;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 6px 20px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+      box-shadow: 0 0 40px rgba(212, 175, 55, 0.6);
+      position: relative;
+      z-index: 2;
+    }
+
+    .avatar-box {
+      position: relative;
+      width: 140px;
+      height: 140px;
+      margin-bottom: 16px;
+      z-index: 2;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .avatar-box::before {
+      content: '';
+      position: absolute;
+      inset: -8px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #bf953f, #fcf6ba, #aa771c, #bf953f);
+      background-size: 300% 300%;
+      z-index: 0;
+      animation: spinBorder 4s linear infinite, gradientShift 3s ease-in-out infinite;
+      filter: blur(4px);
+    }
+
+    .avatar-box::after {
+      content: '';
+      position: absolute;
+      inset: -3px;
+      border-radius: 50%;
+      background: #0a0a0a;
+      z-index: 0;
+    }
+
+    @keyframes spinBorder {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes gradientShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .avatar-img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      z-index: 1;
+      border: 4px solid #111;
+      background: #1a1a1a;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+    }
+
+    .brand-name {
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: 2.5px;
+      background: linear-gradient(180deg, #ffffff 0%, #d4af37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      text-shadow: 0 0 50px rgba(212, 175, 55, 0.5);
+      position: relative;
+      z-index: 2;
+      line-height: 1.1;
+    }
+
+    .brand-desc {
+      font-size: 17px;
+      font-weight: 800;
+      color: #d0d0db;
+      line-height: 1.6;
+      margin-bottom: 24px;
+      padding: 0 10px;
+      max-width: 94%;
+      position: relative;
+      z-index: 2;
+      letter-spacing: 0.3px;
+    }
+
+    .cta-golden {
+      width: 100%;
+      padding: 18px 14px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 35%, #b38728 70%, #fbf5b7 100%);
+      color: #000;
+      font-size: 16px;
+      font-weight: 900;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(212, 175, 55, 0.5);
+      animation: goldPulse 2s infinite alternate;
+      transition: all 0.2s ease;
+      z-index: 2;
+      border: none;
+      cursor: pointer;
+    }
+
+    .cta-golden svg {
+      flex-shrink: 0;
+      filter: drop-shadow(0 0 4px rgba(0,0,0,0.3));
+    }
+
+    .cta-golden::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 40%;
+      height: 200%;
+      background: rgba(255, 255, 255, 0.45);
+      transform: rotate(35deg);
+      transition: all 0.6s;
+      animation: shine 3s infinite;
+    }
+
+    @keyframes shine {
+      0% { left: -60%; }
+      100% { left: 130%; }
+    }
+
+    @keyframes goldPulse {
+      0% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); transform: scale(1); }
+      100% { box-shadow: 0 0 60px rgba(255, 215, 0, 0.9); transform: scale(1.02); }
+    }
+
+    .cta-golden:hover {
+      filter: brightness(1.2);
+      transform: scale(1.04);
+    }
+
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      width: 100%;
+      margin: 22px 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    .stat-item {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 14px 6px;
+      border-radius: 16px;
+      backdrop-filter: blur(8px);
+      transition: all 0.3s;
+      border-width: 2px;
+      border-style: solid;
+    }
+
+    .stat-item:hover {
+      transform: translateY(-4px);
+    }
+
+    .stat-red {
+      border-color: #ef4444;
+      box-shadow: 0 0 25px rgba(239, 68, 68, 0.25);
+      animation: pulseBorderRed 2s infinite alternate;
+    }
+    .stat-green {
+      border-color: #22c55e;
+      box-shadow: 0 0 25px rgba(34, 197, 94, 0.25);
+      animation: pulseBorderGreen 2s infinite alternate;
+    }
+    .stat-blue {
+      border-color: #3b82f6;
+      box-shadow: 0 0 25px rgba(59, 130, 246, 0.25);
+      animation: pulseBorderBlue 2s infinite alternate;
+    }
+
+    @keyframes pulseBorderRed {
+      0% { box-shadow: 0 0 10px rgba(239,68,68,0.2); }
+      100% { box-shadow: 0 0 35px rgba(239,68,68,0.6); }
+    }
+    @keyframes pulseBorderGreen {
+      0% { box-shadow: 0 0 10px rgba(34,197,94,0.2); }
+      100% { box-shadow: 0 0 35px rgba(34,197,94,0.6); }
+    }
+    @keyframes pulseBorderBlue {
+      0% { box-shadow: 0 0 10px rgba(59,130,246,0.2); }
+      100% { box-shadow: 0 0 35px rgba(59,130,246,0.6); }
+    }
+
+    .stat-val {
+      font-weight: 900;
+      font-size: 20px;
+      text-shadow: 0 0 20px currentColor;
+    }
+
+    .stat-red .stat-val { color: #ef4444; }
+    .stat-green .stat-val { color: #22c55e; }
+    .stat-blue .stat-val { color: #3b82f6; }
+
+    .stat-lbl {
+      color: #b0b0ba;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-top: 4px;
+      letter-spacing: 0.5px;
+    }
+
+    .balls-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin: 20px 0 16px;
+      width: 100%;
+      z-index: 2;
+      position: relative;
+    }
+
+    .ball {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      box-shadow: 0 0 45px rgba(212, 175, 55, 0.7);
+      animation: float 2.8s ease-in-out infinite;
+    }
+
+    .ball:nth-child(1) { animation-delay: 0s; }
+    .ball:nth-child(2) { animation-delay: 0.4s; }
+    .ball:nth-child(3) { animation-delay: 0.8s; }
+
+    .footer-note {
+      text-align: center;
+      font-size: 13px;
+      font-weight: 700;
+      color: #4a4a55;
+      padding: 18px 0 20px;
+      width: 100%;
+      background: #050505;
+      border-top: 1px solid rgba(212, 175, 55, 0.1);
+    }
+
+    .footer-note a {
+      color: #f3c649;
+      text-decoration: none;
+      font-weight: 900;
+      border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+      padding-bottom: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .footer-note a:hover {
+      color: #ffd700;
+      border-bottom-color: #ffd700;
+      text-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
+    }
+
+    @media (max-width: 480px) {
+      .brand-name { font-size: 32px; }
+      .brand-desc { font-size: 15px; }
+      .hero-card { padding: 22px 12px 28px; }
+      .cta-golden { font-size: 14px; padding: 16px 10px; gap: 10px; }
+      .ball { width: 44px; height: 44px; }
+      .balls-container { gap: 20px; }
+      .stat-val { font-size: 17px; }
+      .agency-btn { font-size: 10px; padding: 10px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-wrapper">
+
+    <a href="#" class="agency-btn" id="agencyBadge">
+      <span class="pulse-dot"></span> ADS BY ASHISH AGENCY
+    </a>
+
+    <div class="hero-card">
+
+      <div class="vip-tag">𝐍𝐨𝟏 𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐂𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐲</div>
+
+      <div class="avatar-box">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Crect width='140' height='140' fill='%231a1a1a'/%3E%3Ctext x='25' y='85' font-size='22' fill='%23d4af37'%3EASHISH%3C/text%3E%3C/svg%3E" alt="ASHISH BHAI" class="avatar-img" id="profilePic" data-src="ashish.jpg">
+      </div>
+
+      <h1 class="brand-name">𝐀𝐬𝐡𝐢𝐬𝐡 𝐁𝐡𝐚𝐢 𝟐</h1>
+
+      <p class="brand-desc">
+       𝐈𝐧𝐝𝐢𝐚’𝐬 #𝟏 𝐒𝐈𝐆𝐍𝐀𝐋𝐒 𝐀𝐍𝐃 𝐈𝐍𝐒𝐈𝐆𝐇𝐓𝐒 – 𝟗𝟖.𝟖% 𝐀𝐜𝐜𝐮𝐫𝐚𝐜𝐲.<br>
+        𝐉𝐨𝐢𝐧 𝐭𝐡𝐞 𝐜𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐲 𝐟𝐨𝐫 𝐅𝐑𝐄𝐄!
+      </p>
+
+      <a href="#" target="_blank" class="cta-golden" data-tg="link1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#000">
+          <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+        </svg>
+        𝐉𝐨𝐢𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐍𝐨𝐰
+      </a>
+
+      <div class="stats-bar">
+        <div class="stat-item stat-red">
+          <div class="stat-val">𝟗𝟗%</div>
+          <div class="stat-lbl">𝐀𝐂𝐂𝐔𝐑𝐀𝐂𝐘</div>
+        </div>
+        <div class="stat-item stat-green">
+          <div class="stat-val">𝟔𝟎𝐊+</div>
+          <div class="stat-lbl">𝐌𝐄𝐌𝐁𝐄𝐑𝐒</div>
+        </div>
+        <div class="stat-item stat-blue">
+          <div class="stat-val">𝟏𝟎𝟎%</div>
+          <div class="stat-lbl">𝐓𝐑𝐔𝐒𝐓𝐄𝐃</div>
+        </div>
+      </div>
+
+      <a href="#" target="_blank" class="cta-golden" data-tg="link2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#000">
+          <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+        </svg>
+        𝐉𝐨𝐢𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐍𝐨𝐰
+      </a>
+
+      <div class="balls-container">
+        <img src="1.jpg" alt="Ball 1" class="ball">
+        <img src="2.jpg" alt="Ball 2" class="ball">
+        <img src="3.jpg" alt="Ball 3" class="ball">
+      </div>
+
+    </div>
+
+    <div class="footer-note">
+      © 2026 ASHISH AGENCY • All Rights Reserved &nbsp;|&nbsp; ads manages by <a href="#" id="footerLink" data-footer="https://t.me/Gamemastter">ashish digital media</a>
+    </div>
+
+  </div>
+
+ 
+  <script>
+    (function() {
+      var _config = {
+        tg: 'https://t.me/+wxhBIdXFUVVhMWI1',    
+        img: 'ashish.jpg',                       
+        footer: 'https://t.me/Gamemastter'       
+      };
+      
+    
+      var tgButtons = document.querySelectorAll('[data-tg]');
+      for (var i = 0; i < tgButtons.length; i++) {
+        tgButtons[i].href = _config.tg;
+      }
+      var profile = document.getElementById('profilePic');
+      if (profile) {
+        var imgSrc = profile.getAttribute('data-src') || _config.img;
+        profile.src = imgSrc;
+      }
+      var footerLink = document.getElementById('footerLink');
+      if (footerLink) {
+        var flVal = footerLink.getAttribute('data-footer') || _config.footer;
+        footerLink.href = flVal;
+      }
+
+           window.__ASHISH_CONFIG = _config;
+      var originalConfig = JSON.stringify(_config);
+      setInterval(function() {
+        var current = window.__ASHISH_CONFIG;
+        if (current && JSON.stringify(current) !== originalConfig) {
+          window.__ASHISH_CONFIG = JSON.parse(originalConfig);
+          var btns = document.querySelectorAll('[data-tg]');
+          for (var k = 0; k < btns.length; k++) {
+            btns[k].href = window.__ASHISH_CONFIG.tg;
+          }
+          var pf = document.getElementById('profilePic');
+          if (pf) pf.src = window.__ASHISH_CONFIG.img;
+          var fl = document.getElementById('footerLink');
+          if (fl) fl.href = window.__ASHISH_CONFIG.footer;
+        }
+      }, 5000);
+
+            (function consoleDashboard() {
+
+
+        const config = {
+          communityName: 'ASHISH BHAI 2',
+          communityType: '🔥 PREMIUM EDUCATIONAL COMMUNITY',
+          members: '60,000+',
+          tagline: 'India’s #1 Crypto & Trading Education Hub',
+          agency: 'ASHISH AGENCY',
+          profilePhoto: _config.img,
+          telegramLink: _config.tg,
+          footerLink: _config.footer,
+          educationTopics: [
+            '📚 Crypto Trading Basics & Strategies',
+            '📊 Technical Analysis (Chart Patterns, Indicators)',
+            '💰 Risk Management & Capital Preservation',
+            '🧠 Mindset & Discipline for Traders',
+            '🎯 Live Market Analysis & Q&A Sessions',
+            '🏆 60K+ Community Support & Mentorship'
+          ],
+          communityStats: {
+            totalMembers: '60,000+',
+            activeDaily: '15,000+',
+            countries: '120+',
+            languages: '8+'
+          },
+          socialLinks: {
+            telegram: _config.tg,
+            instagram: 'https://instagram.com/ashishbhai',
+            youtube: 'https://youtube.com/ashishbhai'
+          }
+        };
+
+        // ---- STYLED OUTPUT ----
+        const styles = {
+          title: 'font-size: 28px; font-weight: 900; background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728); color: #000; padding: 10px 20px; border-radius: 12px;',
+          section: 'font-size: 18px; font-weight: 800; color: #d4af37; text-transform: uppercase; letter-spacing: 2px;',
+          label: 'font-weight: 700; color: #8a8a94;',
+          value: 'font-weight: 900; color: #ffffff;',
+          success: 'font-weight: 700; color: #22c55e;',
+          warning: 'font-weight: 700; color: #f3c649;',
+          highlight: 'font-weight: 900; color: #f3c649;',
+          divider: 'color: #52525b; font-weight: 300;'
+        };
+
+        console.clear();
+
+        // ---- MAIN BANNER ----
+        console.log('%c🔥 ASHISH BHAI 2 – OFFICIAL EDUCATIONAL COMMUNITY 🔥', styles.title);
+        console.log('%c═══════════════════════════════════════════════════════════════', styles.divider);
+
+        // ---- COMMUNITY OVERVIEW ----
+        console.log(`%c🏛️ COMMUNITY OVERVIEW`, styles.section);
+        console.log(`%c   Community Name:`, styles.label, `%c${config.communityName}`, styles.value);
+        console.log(`%c   Type:`, styles.label, `%c${config.communityType}`, styles.highlight);
+        console.log(`%c   Total Members:`, styles.label, `%c${config.members}`, 'color: #22c55e; font-weight: 900; font-size: 16px;');
+        console.log(`%c   Tagline:`, styles.label, `%c${config.tagline}`, styles.value);
+        console.log(`%c   Agency:`, styles.label, `%c${config.agency}`, styles.value);
+        console.log('');
+
+        // ---- STATS ----
+        console.log(`%c📊 COMMUNITY STATS`, styles.section);
+        console.log(`%c   👥 Total Members:`, styles.label, `%c${config.communityStats.totalMembers}`, 'color: #3b82f6; font-weight: 900;');
+        console.log(`%c   📈 Active Daily:`, styles.label, `%c${config.communityStats.activeDaily}`, 'color: #22c55e; font-weight: 900;');
+        console.log(`%c   🌍 Countries:`, styles.label, `%c${config.communityStats.countries}`, styles.value);
+        console.log(`%c   🌐 Languages:`, styles.label, `%c${config.communityStats.languages}`, styles.value);
+        console.log('');
+
+        // ---- EDUCATION TOPICS ----
+        console.log(`%c📖 WHAT WE TEACH (EDUCATION CONTENT)`, styles.section);
+        config.educationTopics.forEach((topic, i) => {
+          console.log(`%c   ${i+1}. ${topic}`, styles.value);
+        });
+        console.log('');
+
+        // ---- IMPORTANT LINKS ----
+        console.log(`%c🔗 IMPORTANT LINKS`, styles.section);
+        console.log(`%c   📱 Telegram (Main Channel):`, styles.label, `%c${config.telegramLink}`, styles.success);
+        console.log(`%c   📸 Profile Photo:`, styles.label, `%c${config.profilePhoto}`, styles.value);
+        console.log(`%c   🔗 Digital Media (Footer):`, styles.label, `%c${config.footerLink}`, styles.success);
+        console.log(`%c   📷 Instagram:`, styles.label, `%c${config.socialLinks.instagram}`, styles.value);
+        console.log(`%c   ▶️ YouTube:`, styles.label, `%c${config.socialLinks.youtube}`, styles.value);
+        console.log('');
+
+        // ---- COMMUNITY VALUES ----
+        console.log(`%c💎 COMMUNITY VALUES`, styles.section);
+        console.log(`%c   ✅ Free & Premium Education for All`, styles.value);
+        console.log(`%c   ✅ Daily Live Sessions & Market Updates`, styles.value);
+        console.log(`%c   ✅ Beginner to Advanced Learning Path`, styles.value);
+        console.log(`%c   ✅ Zero Spam – 100% Quality Content`, styles.value);
+        console.log(`%c   ✅ 60K+ Strong Family – Learn Together`, styles.value);
+        console.log('');
+
+        // ---- AGENCY BADGE ----
+        console.log(`%c🏷️ AGENCY BADGE`, styles.section);
+        console.log(`%c   ADS BY ASHISH AGENCY (Live on Landing Page)`, styles.highlight);
+        console.log('');
+
+        // ---- THREE BALLS ----
+        console.log(`%c🎱 THREE BALL IMAGES (1.jpg, 2.jpg, 3.jpg)`, styles.section);
+        console.log(`%c   All 3 balls are SAME SIZE (60px) with floating animation`, styles.value);
+        console.log(`%c   Left → Center → Right (All equal)`, styles.label);
+        console.log('');
+
+        // ---- FOOTER ----
+        console.log(`%c📄 FOOTER`, styles.section);
+        console.log(`%c   Text:`, styles.label, `%cads manages by ashish digital media`, styles.value);
+        console.log(`%c   Link:`, styles.label, `%c${config.footerLink}`, styles.success);
+        console.log('');
+
+        // ---- COMPLETION BANNER ----
+        console.log('%c✅ 60K+ EDUCATIONAL COMMUNITY – FULLY ACTIVE!', 'font-size: 20px; font-weight: 900; color: #d4af37; background: #000; padding: 8px 16px; border-radius: 8px; border: 2px solid #d4af37;');
+        console.log('%c═══════════════════════════════════════════════════════════════', styles.divider);
+        console.log('%c🔥 Copy this config to update anything:', 'font-weight: 800; color: #f3c649;');
+        console.log(config);
+
+        // Store globally for live editing
+        window.__ASHISH_EDU_CONFIG = config;
+        console.log('%c💡 To edit, run: window.__ASHISH_EDU_CONFIG.tg = "new link"', styles.warning);
+        console.log('%c💡 Then reload the page to see changes.', styles.warning);
+
+      })(); 
+    })(); 
+  </script>
+
+</body>
+</html>
